@@ -28,6 +28,11 @@
     return self;
 }
 
++ (void)cancelAllOperations
+{
+    [[HJSynchronizeQueue synchronizeQueue] cancelAllOperations];
+}
+
 #pragma mark - sync
 + (void)execSyncBlock:(void (^)())block
 {

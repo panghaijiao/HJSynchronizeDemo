@@ -11,7 +11,8 @@
 @interface HJSynchronizeQueue : NSOperationQueue
 
 + (void)execSyncBlock:(void (^)())block;
-
 + (NSOperation *)execAsynBlock:(void (^)())block;
+
++ (void)cancelAllOperations;
 
 @end
