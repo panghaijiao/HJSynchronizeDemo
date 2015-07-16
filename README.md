@@ -15,7 +15,7 @@ Check out this [project](https://github.com/panghaijiao/HJSynchronizeDemo). It c
       // to do
 }];
 ```
-*synchronization queue*
+*Synchronization queue*
 
 ```
 [HJSynchronizeQueue execAsynBlock:^{
