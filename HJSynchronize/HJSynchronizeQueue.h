@@ -12,7 +12,9 @@
 
 + (void)execSyncBlock:(void (^)())block;
 + (NSOperation *)execAsynBlock:(void (^)())block;
-
 + (void)cancelAllOperations;
+
+- (void)execSyncBlock:(void (^)())block;
+- (NSOperation *)execAsynBlock:(void (^)())block;
 
 @end
