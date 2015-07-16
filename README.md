@@ -22,7 +22,7 @@ Check out this [project](https://github.com/panghaijiao/HJSynchronizeDemo). It c
      // to do
 }];
 ```
-
+For more information you can visit the [web site](http://www.olinone.com)
 
 ## License
 
