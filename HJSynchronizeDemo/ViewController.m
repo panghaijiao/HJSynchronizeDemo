@@ -38,14 +38,14 @@
 - (void)test_gcd_serialSyn {
     NSLog(@"\n\n GCD 串行执行，堵塞线程 \n");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [HJSynchronizeGCD execSyncBlock:^{
+        [HJSynchronizeSerial execSyncBlock:^{
             [self execTaskA];
             NSLog(@"A Finish");
         }];
         NSLog(@"A GOON EXEC");
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [HJSynchronizeGCD execSyncBlock:^{
+        [HJSynchronizeSerial execSyncBlock:^{
             [self execTaskB];
             NSLog(@"B Finish");
         }];
@@ -56,14 +56,14 @@
 - (void)test_gcd_concurrentSyn {
     NSLog(@"\n\n GCD 并行执行，不堵塞线程 \n");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [HJSynchronizeGCD execAsynBlock:^{
+        [HJSynchronizeSerial execAsynBlock:^{
             [self execTaskA];
             NSLog(@"A Finish");
         }];
         NSLog(@"A GOON EXEC");
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [HJSynchronizeGCD execAsynBlock:^{
+        [HJSynchronizeSerial execAsynBlock:^{
             [self execTaskB];
             NSLog(@"B Finish");
         }];

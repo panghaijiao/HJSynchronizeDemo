@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0166A661B4E26B50015F1A1 /* HJSynchronizeGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = A0166A651B4E26B50015F1A1 /* HJSynchronizeGCD.m */; };
 		A0745A941B4DFCA500C4F585 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0745A931B4DFCA500C4F585 /* main.m */; };
 		A0745A971B4DFCA500C4F585 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0745A961B4DFCA500C4F585 /* AppDelegate.m */; };
 		A0745A9A1B4DFCA500C4F585 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0745A991B4DFCA500C4F585 /* ViewController.m */; };
@@ -16,6 +15,7 @@
 		A0745AA21B4DFCA500C4F585 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0745AA01B4DFCA500C4F585 /* LaunchScreen.xib */; };
 		A0745AAE1B4DFCA500C4F585 /* HJSynchronizeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0745AAD1B4DFCA500C4F585 /* HJSynchronizeDemoTests.m */; };
 		A0745ABA1B4DFCFB00C4F585 /* HJSynchronizeQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A0745AB91B4DFCFB00C4F585 /* HJSynchronizeQueue.m */; };
+		A0F0C9681C1AB74300A59A76 /* HJSynchronizeSerial.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F0C9671C1AB74300A59A76 /* HJSynchronizeSerial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A0166A641B4E26B50015F1A1 /* HJSynchronizeGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJSynchronizeGCD.h; sourceTree = "<group>"; };
-		A0166A651B4E26B50015F1A1 /* HJSynchronizeGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJSynchronizeGCD.m; sourceTree = "<group>"; };
 		A0166A671B4E96280015F1A1 /* HJSynchronize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJSynchronize.h; sourceTree = "<group>"; };
 		A0745A8E1B4DFCA500C4F585 /* HJSynchronizeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJSynchronizeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0745A921B4DFCA500C4F585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		A0745AAD1B4DFCA500C4F585 /* HJSynchronizeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJSynchronizeDemoTests.m; sourceTree = "<group>"; };
 		A0745AB81B4DFCFB00C4F585 /* HJSynchronizeQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJSynchronizeQueue.h; sourceTree = "<group>"; };
 		A0745AB91B4DFCFB00C4F585 /* HJSynchronizeQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJSynchronizeQueue.m; sourceTree = "<group>"; };
+		A0F0C9661C1AB74300A59A76 /* HJSynchronizeSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJSynchronizeSerial.h; sourceTree = "<group>"; };
+		A0F0C9671C1AB74300A59A76 /* HJSynchronizeSerial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJSynchronizeSerial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				A0166A671B4E96280015F1A1 /* HJSynchronize.h */,
-				A0166A641B4E26B50015F1A1 /* HJSynchronizeGCD.h */,
-				A0166A651B4E26B50015F1A1 /* HJSynchronizeGCD.m */,
+				A0F0C9661C1AB74300A59A76 /* HJSynchronizeSerial.h */,
+				A0F0C9671C1AB74300A59A76 /* HJSynchronizeSerial.m */,
 				A0745AB81B4DFCFB00C4F585 /* HJSynchronizeQueue.h */,
 				A0745AB91B4DFCFB00C4F585 /* HJSynchronizeQueue.m */,
 			);
@@ -239,9 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F0C9681C1AB74300A59A76 /* HJSynchronizeSerial.m in Sources */,
 				A0745A9A1B4DFCA500C4F585 /* ViewController.m in Sources */,
 				A0745A971B4DFCA500C4F585 /* AppDelegate.m in Sources */,
-				A0166A661B4E26B50015F1A1 /* HJSynchronizeGCD.m in Sources */,
 				A0745ABA1B4DFCFB00C4F585 /* HJSynchronizeQueue.m in Sources */,
 				A0745A941B4DFCA500C4F585 /* main.m in Sources */,
 			);
